@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Bitstarter</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" rel="stylesheet">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://font.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http:?/font.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet">
     <style type="text/css">
-      h1, .subheading {
+      body {
+      font-family:'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+
       text-align:center;
+      font-family:'Ubuntu', Helvetica, Arial, sans-serif;
       }
       p.lead {
       font-size:26px;
@@ -17,17 +27,50 @@
       background-color:#343434;
       color:white;
       padding:3% 0%;
-      }
-      .statistics {
       text-align:center;
       }
-    </Style>
+      
+      .social {
+      padding-top:10px;
+      }
+      .section1, .section2, .faq {
+      padding-top:10px;
+      }
+      .copy {
+      font-size:17px;
+      }
+
+      /* Large Desktop */
+      @media (min-width: 980px) {
+      body {
+      padding-top:60px;
+      }
+      .linediv-l {
+      border-right:1px white solid;
+      }
+      .linediv-r {
+      border-left:1px white solid;
+      }
+      }
+
+      @media (max-width:480px) {
+      .copy {
+      padding:2.5% 10%
+      }
+      .linediv-l {
+      border-bottom:1px white solid;
+      }
+      .linediv-r {
+      border-top:1px white solid;
+      }
+      }
+    </style>
 
     </head>
     <body>
 
 
-    <div class="navbar navbar-static-top navbar-inverse">
+    <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
 	<div class="container">
 	 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -87,43 +130,65 @@
 	      </div>
 	    </div>
 	    <div class="span10 offset1">
-	      <div class="progress">
+	      <div class="progress thermometer active">
 		<div class="bar bar-success" style="width:60%"></div>
 		<div class="bar bar-warning" style="width:40%"></div>
 	      </div>
 	    </div>
-	  </div>
-	</div>
-	  <div class="span6">
-	    <div class="thermometer">
-	      Thermometer
+	    <div class="span6 order offset3">
+	      <button class="btn btn-success btn-large">Preorder</button>
 	    </div>
-	    <div class="order">
-	      Order
-	    </div>
-	    <div class="social">
-	      Social
+	    <div class="span8 social offset2">
+	      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
 	    </div>
 	  </div>
 	</div>
-	<div class="row section1">
-	  <div class="span12">
-	    Marketing Section 1
+	<div class="row-fluid section1">
+	  <div class="span5 offset1">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
+	  <div class="span5 copy">
+	    <p>	     
+	      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.  
+	    </p>
 	  </div>
 	</div>
-	<div class="row section2">
-	  <div class="span12">
- 	    Marketing Section 2
+	<div class="row-fluid section2">
+	  <div class="span5 copy offset1">
+	    <p>	     
+	      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.  
+	    </p>
+	  </div>
+  	  <div class="span5">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
 	  </div>
 	</div>
-	<div class="row faq">
-	  <div class="span12">
-	    FAQ
-	  </div>  
-	</div>
-	<div class="row footer">
-	  <div class="span12">
-	    Footer
+	<div class="row-fluid faq">
+	  <div class="span10 offset1">
+	    <h3>FAQs</h3>
+	    <div class="accordion" id="accordion1">
+	      <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion1" href="#collapseOne">What does FAQ stand for?</a>
+		</div>
+		<div id="collapseOne" class="accordion-body collapse">
+		  <div class="accordion-inner">
+		    Frequently Asked Question
+		  </div>
+		</div>
+	      </div>
+	      <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion1" href="#collapseTwo">What's a frequently asked question?</a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse">
+		  <div class="accordion-inner">
+		    A question which is commonly asked by users.
+		  </div>
+		</div>
+	      </div>
+	    </div>
 	  </div>
 	</div>
       </div>
