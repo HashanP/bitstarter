@@ -2,75 +2,98 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <style type="text/css">
-      body {
-      padding-top:20px;
-      padding-bottom:40px;
+      h1, .subheading {
+      text-align:center;
       }
-
-      .container {
-      width:960px;
-      }
-
       p.lead {
-      padding-top:15px;
+      font-size:26px;
       }
-
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-      padding: 10px 0px 10px 0px;
+      .actions {
+      background-color:#343434;
+      color:white;
+      padding:3% 0%;
       }
-
-      .video, .thermometer, .order, .social {
-      border: 1px dotted;
-      text-align: center;
+      .statistics {
+      text-align:center;
       }
-
-      .video {
-      height: 124px;
-      line-height:124px;
-      }
-
-      .thermometer, .order, .social {
-      height: 40px;
-      line-height: 40px;
-      }
-
-      div.row {
-      border: 1px solid;
-      }
-
-      </style>
+    </Style>
 
     </head>
     <body>
+
+
+    <div class="navbar navbar-static-top navbar-inverse">
+      <div class="navbar-inner">
+	<div class="container">
+	 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	 </button>
+	 <a class="brand logo">
+	     Bitstarter
+	 </a>
+	 <div class="nav-collapse collapse">
+	   <ul class="nav">
+	     <li class="active"><a href="#">Home</a></li>
+	     <li><a href="#about">About</a></li>
+	     <li><a href="#contact">Contact</a></li>
+	   </ul>
+	 </div>
+	</div>
+      </div>
+    </div>
+
+
       <div class="container">
-	<div class="row navigation">
-	  <div class="span2 logo">
-	    Logo
-	  </div>
-	  <div class="span6 blank">
-	    Blank
-	  </div>
-	  <div class="span4 about">
-	    About
-	  </div>
-	</div>
-	<div class="row heading">
+	<div class="row-fluid heading">
 	  <div class="span12">
-	    <h1>Bitstarter Title</h1>
+	    <h1>Product</h1>
 	  </div>
 	</div>
-	<div class="row subheading">
+	<div class="row-fluid subheading">
 	  <div class="span12">
-	    <p class="lead">This is my (Hashan Punchihewa - 14 years old) first bitstarter project.</p>
+	    <p class="lead">One sentence description</p>
 	  </div>
 	</div>
-	<div class="row pitch">
-	  <div class="span6 video">
-	    Video
+	<div class="row-fluid pitch">
+	  <div class="span5 offset1 video">
+	    <img class="img-polaroid" src="http://www.placehold.it/480x300"></img>
 	  </div>
+
+	  <div class="span5 actions">
+	    <div class="span8 offset2">
+	      <div class="statistics">
+		<div class="span4">
+		  <div class="linediv-l">
+		    <h3>1000</h3><p>Backers</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-c">
+		    <h3>$6000</h3><p>of $10,000</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-r">
+		    <h3>10</h3><p>days left</p>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="span10 offset1">
+	      <div class="progress">
+		<div class="bar bar-success" style="width:60%"></div>
+		<div class="bar bar-warning" style="width:40%"></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	  <div class="span6">
 	    <div class="thermometer">
 	      Thermometer
