@@ -11,14 +11,26 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://font.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http:?/font.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic" rel="stylesheet" type="text/css">
     <style type="text/css">
       body {
       font-family:'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .heading, .subheading {
-
+      .heading, .brand {
+      text-align:center;
+      font-family:'IM Fell DW Pica', Helvetica, Arial, serif;
+      text-transform:uppercase;
+      }
+      .subheading {
       text-align:center;
       font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+
+      h2, h3, h4, h5, h6 {
+      font-family: Helvetica, Arial, sans-serif;
+      }
+      h5 {
+      text-transform:uppercase;
       }
       p.lead {
       font-size:26px;
@@ -53,6 +65,7 @@
       }
       }
 
+      /* Mobile Device */
       @media (max-width:480px) {
       .copy {
       padding:2.5% 10%
@@ -63,6 +76,45 @@
       .linediv-r {
       border-top:1px white solid;
       }
+      .languages img {
+      height:40px !important;
+      }
+      }
+      .languages img {
+      height:80px;
+      }
+      .languages .span10 {
+      margin-top:20px;
+      border:1px solid #bbb;
+      }
+      .item.active a {
+      border-top:none;
+      }
+      .languages h2 {
+      padding-top:20px;
+      padding-left:20px;
+      padding-right:20px;
+      }
+      .nav.nav-tabs {
+      margin-bottom:0px;
+      }
+      .nav.nav-pills li a {
+      margin-top:0px;
+      margin-bottom:0px;
+      height:100px;
+      border-radius:0px;
+      padding-bottom:0px;
+      webkit-border-radius:0px;
+      }
+      .section2 {
+      margin-top:20px;
+      }
+      .tab-pane {
+      color:black;
+      padding:10px;
+      }
+      .trad {
+      font-weight:bold;
       }
     </style>
 
@@ -79,7 +131,7 @@
 	   <span class="icon-bar"></span>
 	 </button>
 	 <a class="brand logo">
-	     Bitstarter
+	   Athena
 	 </a>
 	 <div class="nav-collapse collapse">
 	   <ul class="nav">
@@ -93,15 +145,17 @@
     </div>
 
 
+
+
       <div class="container">
 	<div class="row-fluid heading">
 	  <div class="span12">
-	    <h1>Product</h1>
+	    <h1>Athena</h1>
 	  </div>
 	</div>
 	<div class="row-fluid subheading">
 	  <div class="span12">
-	    <p class="lead">One sentence description</p>
+	    <p class="lead">Cloud Development Environment</p>
 	  </div>
 	</div>
 	<div class="row-fluid pitch">
@@ -119,12 +173,12 @@
 		</div>
 		<div class="span4">
 		  <div class="linediv-c">
-		    <h3>$6000</h3><p>of $10,000</p>
+		    <h3>$0</h3><p>of $30,000</p>
 		  </div>
 		</div>
 		<div class="span4">
 		  <div class="linediv-r">
-		    <h3>10</h3><p>days left</p>
+		    <h3>30</h3><p>days left</p>
 		  </div>
 		</div>
 	      </div>
@@ -144,14 +198,51 @@
 	    </div>
 	  </div>
 	</div>
-	<div class="row-fluid section1">
-	  <div class="span5 offset1">
-	    <img class="img-polaroid" src="http://placehold.it/480x300">
-	  </div>
-	  <div class="span5 copy">
-	    <p>	     
-	      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.  
-	    </p>
+	<div class="row-fluid languages">
+	  <div class="span10 offset1">
+	     <ul class="nav nav-tabs">
+	       <li><h2>70+ Lanauges:</h2></li>
+	       <li class="item active"><a data-toggle="tab" href="#html-css-js">
+		 <img src="http://www.extremecss.com/wp-content/uploads/2012/12/html5css3.png">
+		 <img src="https://github.com/voodootikigod/logo.js/diff_blob/4576aabdc9a12acaccee307fe60f7ae7a125dbdb/js.jpg?raw=true">
+	       </a></li>  
+	       <li class="item"><a data-toggle="tab" href="#node-js">
+		   <img src="http://www.codersgrid.com/wp-content/uploads/2013/05/nodejs-image-processing.png">
+	       </a></li>
+	       <li class="item"><a data-toggle="tab" href="#python">
+		   <img src="http://www.online-utility.org/image/ImageCache?file=0/0a/Python.svg/800px-Python.svg">
+	       </a></li>
+	     </ul>
+	     <div class="tab-content">
+	       <div class="tab-pane active" id="html-css-js">
+		 <div class="span4">
+		   <h5> Templating Languages</h5>
+		   <ul>
+		     <li>Jade</li>
+		     <li>Underscore</li>
+		     <li>Mustache</li>
+		   </ul>
+		   <h5>Markdown</h5>
+		   <ul>
+		     <li>Side by Side Live Previews</li>
+		   </ul>
+		  </div>
+		<div class="span4">
+		  <h5>JavaScript Code Quality </h5>
+		  <ul>
+		    <li>JSHint</li>
+		    <li>JSLint</li>
+		  </ul>
+		  <h5>CSS Code Quality</h5>
+		  <ul>
+		    <li>CSSLint</li>
+		  </ul>
+		</div>
+	       </div>
+		  <div class="tab-pane" id="node-js">
+		    <h4>Node.js Live Debugging</h4>
+		  </div>
+	     </div>
 	  </div>
 	</div>
 	<div class="row-fluid section2">
